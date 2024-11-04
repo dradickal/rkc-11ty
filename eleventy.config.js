@@ -30,6 +30,7 @@ export default function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('./src/favicon.ico');
 	eleventyConfig.addPassthroughCopy('./src/admin');
 	eleventyConfig.addPassthroughCopy('./src/assets/img');
+	eleventyConfig.addPassthroughCopy('./src/.nojekyll');
 };
 
 export const config = {

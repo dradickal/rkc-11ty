@@ -1,8 +1,8 @@
 {
   "name": "rkc-11ty",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.njk",
+  "description": "Portfolio website for David Radick",
+  "main": "src/index.njk",
   "repository": {
     "url": "https://github.com/"
   },
