@@ -1,0 +1,61 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  margin: 40px 0;
+}
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 25px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow);
+}
+:root[data-theme=dark] .project-card {
+  background-color: var(--color-bg-secondary-dark);
+}
+.project-card h4 {
+  margin-top: 1.5rem;
+}
+
+.project-card__title {
+  color: var(--color-text);
+}
+:root[data-theme=dark] .project-card__title {
+  color: var(--color-title-dark);
+}
+:root[data-theme=dark] .project-card__title:hover {
+  color: var(--color-link-dark);
+  border-color: var(--color-link-dark);
+}
+
+.project-card__tag {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+:root[data-theme=dark] .project-card__tag {
+  background-color: var(--color-bg-accent-dark);
+  color: var(--color-text-alt);
+}
+.project-card__tag:hover {
+  background-color: var(--color-bg-accent-dark);
+  color: var(--color-text-alt);
+}
+:root[data-theme=dark] .project-card__tag:hover {
+  background-color: var(--color-bg-highlight-dark);
+  color: var(--color-text);
+}
+
+.project-card__emoji {
+  margin-right: 8px;
+}

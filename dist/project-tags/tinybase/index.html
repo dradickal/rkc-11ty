@@ -1,0 +1,226 @@
+<!doctype html>
+<html
+  data-enable-theme-switch="true"
+  data-use-system-theme="false"
+  data-default-theme="light"
+  
+  lang="en"
+>
+
+	<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects tagged: tinybase</title>
+  <meta name="description" content="All projects tagged with &quot;tinybase&quot;">
+
+  
+  
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  
+  <script>
+    // Initialize theme
+    // Must run before page rendering to prevent flash
+    const themeConfig = document.documentElement.dataset;
+    const theme = localStorage.getItem('theme');
+
+    if (theme) {
+      themeConfig.theme = theme;
+    } else {
+      const defaultTheme = themeConfig.defaultTheme;
+      const useSystemTheme = themeConfig.useSystemTheme === 'true';
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      themeConfig.theme = (useSystemTheme && prefersDark) ? 'dark' : defaultTheme;
+    }
+  </script>
+  <script defer src="/assets/js/main.bundle.js"></script>
+</head>
+
+
+  <body>
+		<div class="wrapper-bg-wrapper">
+      <div class="wrapper-bg"></div>
+    </div>
+
+		<header class="site-header">
+  <div class="site-header__container">
+    <span class="site-header__logo-container">
+      <a class="site-header__logo" href="/" aria-label="Logo">
+        <img src="/assets/img/rkc-logo.png" alt="RKC Logo"/>
+      </a>
+    </span>
+    
+      <button class="site-header__mobile-nav site-header__link site-header__link--theme-switch" data-theme-switch>
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.5 14C7.01472 14 5 11.9853 5 9.5C5 7.01472 7.01472 5 9.5 5C11.9853 5 14 7.01472 14 9.5C14 11.9853 11.9853 14 9.5 14ZM9.5 13C11.433 13 13 11.433 13 9.5C13 7.567 11.433 6 9.5 6C7.567 6 6 7.567 6 9.5C6 11.433 7.567 13 9.5 13ZM10 3H9V0H10V3ZM14.4497 5.25736L13.7426 4.55025L15.864 2.42893L16.5711 3.13604L14.4497 5.25736ZM16 10V9H19V10H16ZM13.7426 14.4497L14.4497 13.7426L16.5711 15.864L15.864 16.5711L13.7426 14.4497ZM9 16H10V19H9V16ZM4.55025 13.7426L5.25736 14.4497L3.13604 16.5711L2.42893 15.864L4.55025 13.7426ZM3 9V10H0V9H3ZM5.25736 4.55025L4.55025 5.25736L2.42893 3.13604L3.13604 2.42893L5.25736 4.55025Z" fill="currentColor"/>
+</svg>
+
+      </button>
+    
+    <button
+      class="site-header__mobile-nav"
+      data-drawer-trigger=""
+      aria-controls="drawer-name"
+      aria-expanded="false"
+    >
+      <span class="site-header__mobile-nav-label">Menu</span>
+      <svg width="226" height="187" viewBox="0 0 226 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0H225.311V22.8494H0V0Z" fill="currentColor"/>
+  <path d="M0 81.872H225.311V104.721H0V81.872Z" fill="currentColor"/>
+  <path d="M0 163.744H225.311V186.593H0V163.744Z" fill="currentColor"/>
+</svg>
+
+    </button>
+    <nav class="site-header__nav">
+      
+      <ul class="site-header__items">
+          <li class="site-header__item">
+            <a
+              class="site-header__link"
+              href="/about/"
+              
+            >
+              About
+            </a>
+          </li>
+          <li class="site-header__item">
+            <a
+              class="site-header__link"
+              href="/projects/"
+              
+            >
+              Projects
+            </a>
+          </li>
+
+        
+          <li class="site-header__item">
+            <button class="site-header__link site-header__link--theme-switch" data-theme-switch>
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.5 14C7.01472 14 5 11.9853 5 9.5C5 7.01472 7.01472 5 9.5 5C11.9853 5 14 7.01472 14 9.5C14 11.9853 11.9853 14 9.5 14ZM9.5 13C11.433 13 13 11.433 13 9.5C13 7.567 11.433 6 9.5 6C7.567 6 6 7.567 6 9.5C6 11.433 7.567 13 9.5 13ZM10 3H9V0H10V3ZM14.4497 5.25736L13.7426 4.55025L15.864 2.42893L16.5711 3.13604L14.4497 5.25736ZM16 10V9H19V10H16ZM13.7426 14.4497L14.4497 13.7426L16.5711 15.864L15.864 16.5711L13.7426 14.4497ZM9 16H10V19H9V16ZM4.55025 13.7426L5.25736 14.4497L3.13604 16.5711L2.42893 15.864L4.55025 13.7426ZM3 9V10H0V9H3ZM5.25736 4.55025L4.55025 5.25736L2.42893 3.13604L3.13604 2.42893L5.25736 4.55025Z" fill="currentColor"/>
+</svg>
+
+            </button>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+		<section class="drawer" id="drawer-name" data-drawer-target>
+  <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+  <div class="drawer__wrapper">
+    <div class="drawer__header">
+      <button class="drawer__close" data-drawer-close aria-label="Close Drawer">
+        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 3.84294L3.84294 0L22.4996 18.7131L41.2127 0L45 3.84294L26.3425 22.4996L45 41.2127L41.2127 45L22.4996 26.3425L3.84294 45L0 41.2127L18.7131 22.4996L0 3.84294Z" fill="currentColor"/>
+</svg>
+
+      </button>
+    </div>
+    <div class="drawer__content">
+      
+
+      <ul class="drawer__nav">
+        <li class="drawer__nav-item">
+          <a
+            href="/"
+            
+          >
+            Home
+          </a>
+        </li>
+        <li class="drawer__nav-item">
+          <a
+            href="/about/"
+            
+          >
+            About
+          </a>
+        </li>
+        <li class="drawer__nav-item">
+          <a
+            href="/projects/"
+            
+          >
+            Projects
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+		<main>
+			
+
+<div class="page-container">
+  
+  <div class="tag-list tag-list--no-wrap">
+    <h4 class="tag-list__title">Projects Tagged: "tinybase"</h4>
+    <a class="btn btn--sm btn--danger" href="/projects">Clear Filter</a>
+  </div>
+
+  
+  
+  
+  <section>
+    <div class="project-grid">
+      
+      
+        <div class="project-card" >
+          <h4>
+            
+                <span class="project-card__emoji">🏈</span>
+            
+            <a class="project-card__title" href="/projects/fantasy-draft-tool/">
+              
+                Fantasy Draft Tool
+              
+            </a>
+          </h4>
+          
+            <p>
+              An interactive list of players to assist me during my live Fantasy Football draft.
+            </p>
+          
+          
+            <p class="tag-list">
+              
+                <a class="project-card__tag tag" href="/project-tags/tinybase/" rel="tag">tinybase</a>
+                <a class="project-card__tag tag" href="/project-tags/vite/" rel="tag">vite</a>
+                <a class="project-card__tag tag" href="/project-tags/react/" rel="tag">react</a>
+                <a class="project-card__tag tag" href="/project-tags/typescript/" rel="tag">typescript</a>
+            </p>
+          
+        </div>
+      
+      
+    </div>
+  </section>
+
+
+  <nav>
+    <a href="/projects/">← View All Projects</a>
+  </nav>
+</div>
+
+		</main>
+
+		<footer class="site-footer">
+  <small>
+    Website built with <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>.
+    Source code on <a href="https://github.com/" target="_blank">GitHub</a>.
+  </small>
+</footer>
+
+	</body>
+
+</html>
