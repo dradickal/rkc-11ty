@@ -1,0 +1,44 @@
+---
+layout: base.njk
+section: project
+---
+<div class="page-container">
+  <div class="project-header">
+    <div class="project-header__titles">  
+      <h1>
+        {% if emoji %}
+          <span class="project-card__emoji">{{ emoji }}</span>
+        {% endif %}
+        {{title}}</h1>
+        {% if summary %}
+          <p>
+            {{ summary }}
+          </p>
+        {% endif %}
+    </div>
+    <div class="project-header__links">
+      {% if sourceCodeUrl %}
+        <a class="btn" href="{{ sourceCodeUrl | url }}">Source Code</a>
+      {% endif %}
+      {% if demoUrl %}
+        <a class="btn" href="{{ demoUrl | url }}">View Demo</a>
+      {% endif %}
+    </div>
+  </div>
+  <hr/>
+  {{ content | safe }}
+  <hr />
+  {% if tags %}
+      <p class="tag-list">
+        {% for tag in tags %}
+          {%- if tag != "project" -%}
+            {% set tagUrl %}/project-tags/{{ tag }}/{% endset %}
+          <a class="project-card__tag tag" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %}
+      </p>
+    {% endif %}
+  <nav>
+    <a href="{{ '/projects/' | url }}">← View All Projects</a>
+  </nav>
+</div>

@@ -1,0 +1,47 @@
+<header class="site-header">
+  <div class="site-header__container">
+    <span class="site-header__logo-container">
+      <a class="site-header__logo" href="{{ '/' | url }}" aria-label="Logo">
+        <img src="{{ global.logo | safe }}" alt="RKC Logo"/>
+      </a>
+    </span>
+    {% if global.enable_theme_switch %}
+      <button class="site-header__mobile-nav site-header__link site-header__link--theme-switch" data-theme-switch>
+        {{ global.switch_theme_icon | svg | safe }}
+      </button>
+    {% endif %}
+    <button
+      class="site-header__mobile-nav"
+      data-drawer-trigger=""
+      aria-controls="drawer-name"
+      aria-expanded="false"
+    >
+      <span class="site-header__mobile-nav-label">Menu</span>
+      {{ global.menu_icon | svg | safe }}
+    </button>
+    <nav class="site-header__nav">
+      {% set navPages = collections.all | eleventyNavigation %}
+      <ul class="site-header__items">
+        {%- for entry in navPages %}
+          <li class="site-header__item">
+            <a
+              class="site-header__link"
+              href="{{ entry.url | url }}"
+              {% if entry.url == page.url %} aria-current data-current="current item"{% endif %}
+            >
+              {{ entry.title }}
+            </a>
+          </li>
+        {%- endfor %}
+
+        {% if global.enable_theme_switch %}
+          <li class="site-header__item">
+            <button class="site-header__link site-header__link--theme-switch" data-theme-switch>
+              {{ global.switch_theme_icon | svg | safe }}
+            </button>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+</header>

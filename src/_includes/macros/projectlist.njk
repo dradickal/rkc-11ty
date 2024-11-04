@@ -1,0 +1,39 @@
+{% macro projectlist(projects, limit) %}
+  <section>
+    <div class="project-grid">
+      {% for project in projects %}
+      {% if limit === undefined or loop.index0 < limit %}
+        <div class="project-card" {% if project.url == url %} data-current="current item"{% endif %}>
+          <h4>
+            {% if project.data.emoji %}
+                <span class="project-card__emoji">{{ project.data.emoji }}</span>
+            {% endif %}
+            <a class="project-card__title" href="{{ project.url | url }}">
+              {% if project.data.title %}
+                {{ project.data.title }}
+              {% else %}
+                Untitled
+              {% endif %}
+            </a>
+          </h4>
+          {% if project.data.summary %}
+            <p>
+              {{ project.data.summary }}
+            </p>
+          {% endif %}
+          {% if project.data.tags %}
+            <p class="tag-list">
+              {% for tag in project.data.tags %}
+                {%- if tag != "project" -%}
+                  {% set tagUrl %}/project-tags/{{ tag }}/{% endset %}
+                <a class="project-card__tag tag" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+                {%- endif -%}
+              {% endfor %}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endmacro %}

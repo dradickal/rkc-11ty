@@ -1,0 +1,17 @@
+.project-header {
+    display: flex;
+    align-items: center;
+
+    &__titles {
+        flex-grow: 1;
+    }
+
+    &__links {
+        display: flex;
+        flex-flow: column;
+
+        a {
+            margin-bottom: .5em;
+        }
+    }
+}

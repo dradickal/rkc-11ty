@@ -1,0 +1,40 @@
+{
+  "name": "rkc-11ty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.njk",
+  "repository": {
+    "url": "https://github.com/"
+  },
+  "scripts": {
+    "dev": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:sass build:scripts build:eleventy",
+    "watch:eleventy": "npx @11ty/eleventy --serve",
+    "build:eleventy": "npx @11ty/eleventy",
+    "watch:scripts": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --outfile=\"./dist/assets/js/main.bundle.js\"",
+    "build:scripts": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --minify --outfile=\"./dist/assets/js/main.bundle.js\"",
+    "watch:sass": "sass --no-source-map --watch src/assets/scss:dist/assets/css/",
+    "build:sass": "sass --no-source-map src/assets/scss/main.scss dist/assets/css/main.css",
+    "clean": "rimraf './dist'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^5.0.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "luxon": "^3.5.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^6.0.1",
+    "sass": "^1.80.4"
+  }
+}
