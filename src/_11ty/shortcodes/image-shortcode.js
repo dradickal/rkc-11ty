@@ -5,7 +5,7 @@ export default async function imageShortcode (src, alt, sizes, classes, loading 
     widths: [25, 320, 640, 960, 1200, 1800, 2400],
     formats: ['webp', 'jpeg'],
     urlPath: '/assets/img/',
-    outputDir: 'dist/assets/img/',
+    outputDir: 'docs/assets/img/',
   });
 
   let imageAttributes = {

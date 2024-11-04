@@ -41,7 +41,7 @@ export const config = {
     passthroughFileCopy: true,
 	dir: {
 	  input: "src",
-	  output: "dist",
+	  output: "docs",
 	  layouts: "_layouts",
 	}
   };
