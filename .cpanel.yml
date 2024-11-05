@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DESTPATH=/home/radickal/public_html/
-    - export BUILDPATH=/home/radickal/rkc/dist/
+    - export BUILDPATH=dist/
     - /bin/rsync -a --delete $DESTPATH $BUILDPATH
