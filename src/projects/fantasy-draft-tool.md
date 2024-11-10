@@ -4,7 +4,7 @@ emoji: 🏈
 # metaDescription: Will use summary if not used, or the default metadata.desciption if no summary.
 summary: An interactive list of players to assist me during my live Fantasy Football draft.
 date: 2024-08-01T00:00:00.000Z
-sourceUrl: https://github.com/dradickal/fantasy-draft-tool-db
+sourceCodeUrl: https://github.com/dradickal/fantasy-draft-tool-db
 demoUrl: https://radickalcreations.com/demo/fantasy-draft-tool/
 tags:
   - tinybase
