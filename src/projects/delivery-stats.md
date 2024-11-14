@@ -3,6 +3,7 @@ title: Delivery Stats
 emoji: 🚗
 # metaDescription: Will use summary if not used, or the default metadata.desciption if no summary.
 summary: A tool to extract data about gig delivery shifts from screenshot images.
+sourceCodeUrl: https://github.com/dradickal/delivery-stats-frontend
 date: 2024-07-01T00:00:00.000Z
 tags:
   - mysql

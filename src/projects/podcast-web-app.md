@@ -4,6 +4,8 @@ emoji: 🎧
 # metaDescription: Will use summary if not used, or the default metadata.desciption if no summary.
 summary: A project built to practice React and show the use of a third-party API.
 date: 2024-04-01T00:00:00.000Z
+sourceCodeUrl: https://github.com/dradickal/react-podcast-app
+demoUrl: https://radickalcreations.com/demo/podcast-web-app/
 tags:
   - api
   - vite
