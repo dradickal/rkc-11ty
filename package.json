@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.njk",
   "repository": {
-    "url": "https://github.com/"
+    "url": "https://github.com/dradickal/rkc-11ty"
   },
   "scripts": {
     "dev": "npm-run-all build:sass --parallel watch:*",
