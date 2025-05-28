@@ -1,0 +1,29 @@
+{
+    "links": [
+        {
+            "url": "https://github.com/dradickal",
+            "icon": "github.svg",
+            "title": "GitHub"
+        },
+        {
+            "url": "http://codepen.io/dradickal/",
+            "icon": "codepen.svg",
+            "title": "CodePen"
+        },
+        {
+            "url": "https://www.linkedin.com/in/dradick",
+            "icon": "linkedin.svg",
+            "title": "LinkedIn"
+        },
+        {
+            "url": "https://bsky.app/profile/radickal-creations.bsky.social",
+            "icon": "bluesky.svg",
+            "title": "Bluesky"
+        },
+        {
+            "url": "mailto:dradick@radickalcreations.com",
+            "icon": "envelope.svg",
+            "title": "Email"
+        }
+    ]
+}
