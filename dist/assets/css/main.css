@@ -650,6 +650,18 @@ body {
   color: var(--color-text-dark);
 }
 
+.sr-only {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  clip: rect(0, 0, 0, 0);
+  border-width: 0;
+  white-space: nowrap;
+}
+
 .wrapper-bg-wrapper {
   display: none;
 }
@@ -988,7 +1000,7 @@ fieldset {
   margin-left: auto;
   padding: 1rem;
 }
-.page-container img {
+.page-container .post-img {
   display: flex;
   width: 100%;
   max-width: 700px;
@@ -1387,6 +1399,25 @@ fieldset {
 
 .project-card__emoji {
   margin-right: 8px;
+}
+
+.profile-links {
+  display: flex;
+}
+.profile-links a {
+  width: 3rem;
+  margin-right: 1.2rem;
+}
+.profile-links a:hover {
+  text-decoration: none;
+  border: 0;
+}
+.profile-links img {
+  margin: 0;
+}
+.profile-links .sr-only:hover {
+  text-decoration: none;
+  border: 0;
 }
 
 /* Components */
