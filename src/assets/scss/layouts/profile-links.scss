@@ -1,0 +1,22 @@
+.profile-links {
+    display: flex;
+
+    a {
+        width: 3rem;
+        margin-right: 1.2rem;
+        
+        &:hover {
+            text-decoration: none;
+            border: 0;
+        }
+    }
+
+    img {
+        margin: 0;
+    }
+
+    .sr-only:hover {
+        text-decoration: none;
+        border: 0;
+    }
+}

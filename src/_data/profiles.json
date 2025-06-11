@@ -2,27 +2,27 @@
     "links": [
         {
             "url": "https://github.com/dradickal",
-            "icon": "github.svg",
+            "icon": "/assets/img/github.svg",
             "title": "GitHub"
         },
         {
             "url": "http://codepen.io/dradickal/",
-            "icon": "codepen.svg",
+            "icon": "/assets/img/codepen.svg",
             "title": "CodePen"
         },
         {
             "url": "https://www.linkedin.com/in/dradick",
-            "icon": "linkedin.svg",
+            "icon": "/assets/img/linkedin.svg",
             "title": "LinkedIn"
         },
         {
             "url": "https://bsky.app/profile/radickal-creations.bsky.social",
-            "icon": "bluesky.svg",
+            "icon": "/assets/img/bluesky.svg",
             "title": "Bluesky"
         },
         {
             "url": "mailto:dradick@radickalcreations.com",
-            "icon": "envelope.svg",
+            "icon": "/assets/img/envelope.svg",
             "title": "Email"
         }
     ]

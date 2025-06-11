@@ -1,4 +1,5 @@
 ---
+layout: about.njk
 title: About
 subtitle: "Radickal Creations is the creative brand for myself, David Radick."
 metaDescription: Learn more about David Radick and Radickal Creations
