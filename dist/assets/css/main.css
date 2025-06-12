@@ -1419,6 +1419,9 @@ fieldset {
   text-decoration: none;
   border: 0;
 }
+:root[data-theme=dark] .profile-links img {
+  filter: invert(100%);
+}
 
 /* Components */
 .site-header {
